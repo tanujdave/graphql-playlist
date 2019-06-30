@@ -91,7 +91,7 @@ const RootQuery = new GraphQLObjectType({
         authors : {
             type: new GraphQLList(AuthorType),
             resolve(parent, args) {
-                return Book.find({})
+                return Author.find({})
                 // return authors
             }
         }
